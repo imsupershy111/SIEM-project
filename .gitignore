@@ -1,0 +1,88 @@
+# .gitignore for monitoring-project
+# Ignore common Python, tooling, editor, and runtime files that should not be committed
+
+# Byte-compiled / cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+
+# Environment and secret files
+.env
+.env.*
+.env.local
+.envrc
+secrets.json
+credentials
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+pip-wheel-metadata/
+*.egg
+.eggs/
+
+# Installer logs
+pip-log.txt
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# MyPy
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs and runtime files
+*.log
+logs/
+**/logs/
+grafana/logs/
+langchain_pipeline/logs/
+replay_offset.txt
+
+# Databases
+*.db
+*.sqlite3
+
+# Compiled extensions
+*.so
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Project-specific generated or large data
+f5_logs/
+f5_logs/*
+loki/data/
+promtail/data/
+f5_logs/f5_asm_logs.csv
+# Misc
+*.pyc
+*.pyo
+*.pyd
+
